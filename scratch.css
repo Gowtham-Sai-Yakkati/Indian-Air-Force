@@ -1,0 +1,527 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+  /* border: 5px, double white; */
+
+}
+body {
+  background-color: black;
+  color: white;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 4rem 15%;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+#menu-icon {
+  font-size: 3.5rem;
+  color: #ea580c;
+  display: none;
+}
+.logo {
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 800;
+  transition: 0.3s ease-in-out;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+span {
+  background: linear-gradient(270deg, #df8908 10%, #ff1d15 100%);
+  background-clip: text;
+  color: transparent;
+}
+.navbar a {
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover {
+  /* color: lightskyblue; */
+  font-family: serif;
+  background: linear-gradient(to right, goldenrod, white, orange);
+  background-clip: text;
+  color: transparent;
+  border-bottom: 1px solid rgb(248, 152, 63);
+}
+.gradient-btn {
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  background: linear-gradient(270deg, #df8908 10%, #ff1d15 100%);
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: white;
+  border: none;
+  text-wrap: nowrap;
+}
+.gradient-btn:hover {
+  transform: scale(1.05);
+}
+.gradient-btn a:visited{color:white;}
+.gradient-btn a:link{color:black;}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 15%;
+}
+.HOME {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: normal;
+}
+.home-content h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+.home-content p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+}
+.home-img img {
+  width: 32vw;
+  height: 22vw;
+  box-shadow: 0 0 25px lightskyblue;
+  border-radius: 5%;
+  transition: 0.4s ease-in-out;
+}
+.home-img img:hover {
+  box-shadow:
+    0 0 25px yellow,
+    0 0 50px orange,
+    0 0 100px goldenrod;
+}
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  padding: 1rem;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+  color: rgb(246, 81, 21);
+  margin: 3rem 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+.social-icons a:hover {
+  color: black;
+  background-color: #ea580c;
+  transform: scale(1.2) translateY(-3px);
+  box-shadow: 0 0 25px goldenrod;
+  transition: 0.4s ease-in-out;
+}
+.btn-group {
+  display: flex;
+  gap: 1.5rem;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: black;
+  box-shadow:
+    0 0 25px goldenrod,
+    0 0 50px whitesmoke;
+  border-radius: 3rem;
+  font-size: 1.3rem;
+  color: black;
+  border: 2px solid transparent;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-group a {
+  background-color: linear-gradient(to right, red yellow white);
+  color: white;
+  border: 2px solid goldenrod;
+  box-shadow: 0 0 25px transparent;
+}
+
+.btn:hover {
+  background-image: linear-gradient(to right, orange, white, orange);
+  color: black;
+  transform: scale(1.03);
+  box-shadow:
+    0 0 25px orange,
+    /* 0 0 25px #f06136, */ 0 0 5px white;
+}
+
+.JETS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+.jets-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: normal;
+}
+.jets-content h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+.jets-content h1:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+.jets-content p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+}
+.jets-content > span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+.jets-img img {
+  width: 32vw;
+  height: 22vw;
+  box-shadow: 0 0 25px rgb(120, 225, 246);
+  border-radius: 5%;
+  transition: 0.4s ease-in-out;
+}
+.jets-img img:hover {
+  box-shadow:
+    0 0 25px yellow,
+    0 0 50px orange,
+    0 0 100px goldenrod;
+}
+
+.heading {
+  text-align: center;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 5rem;
+  margin: 5rem 0;
+  background: linear-gradient(to right, red, goldenrod, red);
+  background-clip: text;
+  color: transparent;
+}
+
+.jets-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 31vw);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  gap: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  /* grid-row-gap:55rem;
+  grid-column-gap: 65rem; */
+  justify-content: space-around;
+  align-content: space-evenly;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(233, 122, 37),
+    goldenrod,
+    rgb(246, 155, 29)
+  );
+  height: 330px;
+  border-radius: 0%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.04);
+  transition: 0.3s ease-in-out;
+}
+.jet > img {
+  width: 30vw;
+  height: 20vw;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.jet h3 {
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  padding: 10px 0;
+  margin: 0;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 10px;
+  list-style: none;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li a {
+  display: block;
+  margin: 0;
+  padding: 12px 20px;
+
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+  color: #ff8c00;
+  background: #222;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.HELIS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+.helis-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: normal;
+}
+.helis-content h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+.helis-content h1:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+.helis-content p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+}
+.helis-content > span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+.helis-img img {
+  width: 32vw;
+  height: 22vw;
+  box-shadow: 0 0 25px rgb(120, 225, 246);
+  border-radius: 5%;
+  transition: 0.4s ease-in-out;
+}
+.helis-img img:hover {
+  box-shadow:
+    0 0 25px yellow,
+    0 0 50px orange,
+    0 0 100px goldenrod;
+}
+.heading {
+  text-align: center;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 5rem;
+  margin: 5rem 0;
+  background: linear-gradient(to right, red, goldenrod, red);
+  background-clip: text;
+  color: transparent;
+}
+
+.helis-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 31vw);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  gap: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  /* grid-row-gap:55rem;
+  grid-column-gap: 65rem; */
+  justify-content: space-around;
+  align-content: space-evenly;
+}
+.helis > img {
+  width: 30vw;
+  height: 20vw;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.helis h3 {
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+.CARRIERS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+.carriers-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: normal;
+}
+.carriers-content h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+.carriers-content h1:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+.carriers-content p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+}
+.carriers-content > span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+.carriers-img img {
+  width: 32vw;
+  height: 22vw;
+  box-shadow: 0 0 25px rgb(120, 225, 246);
+  border-radius: 5%;
+  transition: 0.4s ease-in-out;
+}
+.carriers-img img:hover {
+  box-shadow:
+    0 0 25px yellow,
+    0 0 50px orange,
+    0 0 100px goldenrod;
+}
+
+.heading {
+  text-align: center;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 5rem;
+  margin: 5rem 0;
+  background: linear-gradient(to right, red, goldenrod, red);
+  background-clip: text;
+  color: transparent;
+}
+
+.carriers-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 31vw);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  gap: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  /* grid-row-gap:55rem;
+  grid-column-gap: 65rem; */
+  justify-content: space-around;
+  align-content: space-evenly;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(233, 122, 37),
+    goldenrod,
+    rgb(246, 155, 29)
+  );
+  height: 330px;
+  border-radius: 0%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.04);
+  transition: 0.3s ease-in-out;
+}
+.carrier > img {
+  width: 30vw;
+  height: 20vw;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.carrier h3 {
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+  font-family: "Times New Roman", Times, serif;
+}
